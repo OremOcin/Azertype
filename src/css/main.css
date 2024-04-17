@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+/*font-family: 'Lemon', serif;*/
+
+#mainBigFlexContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#mainFlexContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  background: rgb(216, 142, 5);
+  border-radius: 20px;
+}
+
+#mainTextDescription {
+  text-align: center;
+  color: white;
+  font-family: 'Lemon', serif;
+}
+
+#radioContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainTextRadio {
+  font-family: 'Lemon', serif;
+  color: white;
+  font-size: 1rem;
+}
+
+#mainWordContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 8vh;
+  background: white;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+#mainWordText {
+  color: rgb(216, 142, 5);
+  font-size: 1.5rem;
+  font-family: 'Lemon', serif;
+  text-align: center;
+}
+
+#mainProgressComponents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+#mainProgressContainer {
+  width: 38%;
+  height: 2.8vh;
+  background: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(216, 142, 5);
+  font-family: 'Lemon', serif;
+}
+
+#mainValidateButton {
+  width: 10%;
+  height: 3vh;
+  background: white;
+  color: rgb(216, 142, 5);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Lemon', serif;
+}
+
+#mainScoreCount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainScoreText {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Lemon', serif;
+}
+
+#SendScoreButton {
+  width: 20%;
+  height: 3vh;
+  background: white;
+  color: rgb(216, 142, 5);
+  font-size: 1rem;
+  font-family: 'Lemon', serif;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+
+
+#pointsText {
+  position: absolute;
+  font-size: 3.5rem;
+  font-family: 'Lemon', serif;
+  color: yellow;
+  opacity: 0;
+  transition: ease 300ms;
+  margin-left: 600px;
+  animation: changeSize 300ms ease-in-out infinite alternate;
+}
+
+#levelsText {
+  position: absolute;
+  font-size: 3.5rem;
+  font-family: 'Lemon', serif;
+  color: rgb(0, 238, 255);
+  opacity: 0;
+  transition: ease 300ms;
+  margin-right: 600px;
+  animation: changeSize 300ms ease-in-out infinite alternate;
+}
+
+#WinGameContainer {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 50%;
+  height: 35vh;
+  background: rgba(0, 128, 0, 0.911);
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px black;
+  backdrop-filter: blur(5px);
+}
+
+#winGameText {
+  font-size: 3rem;
+  font-family: 'Lemon', serif;
+  color: rgb(0, 255, 0);
+  text-align: center;
+  padding: 10px;
+  text-shadow: 1px 1px 5px black;
+}
+
+@keyframes changeSize {
+  0% {
+    font-size: 3.5rem;
+  }
+  100% {
+    font-size: 4.5rem;
+  }
+}
